@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            margin: 0; 
+            padding: 0; 
+            background-color: #ffffff; 
+            color: #000000;
+            font-family: Arial, sans-serif;
+        }
+        table{
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+        .ODS{
+            display: flex;
+            justify-content: flex-end;  
+            padding: 10px 20px;  
+        }
+               
+    </style>
+</head>
+<body>
+    <header style="background-color: #444; color: white; padding: 20px 0; text-align: center;">
+        <h1>Contacto</h1>
+    </header>
+    
+    <table>
+        
+        
+        <tr>
+            <td style="width: 15%; padding: 20px; vertical-align: top; align-content: center;">
+                <nav>
+                    <ul style="list-style-type: none; padding: 0; margin: 0;">
+                        <li class="menu"><a href="index.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Inicio</a></li>
+                        <li class="menu"><a href="productos.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Recomendaciones</a></li>
+                        <li class="menu"><a href="contacto.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Contacto</a></li>
+                    </ul>
+                </nav>
+            </td>
+            
+            <td style="display: flex; height: 100vh; justify-content: right; padding-top: 20px;">
+                <form action="/submit" method="post">
+                        
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+                        
+                        <label for="correo">Correo electrónico</label><br>
+                        <input type="email" name="correo" placeholder="correo@ejemplo.com" required><br>
+                        
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" name="contrasena" value=""><br>
+
+                        <label for="tlfn">Teléfono</label><br>
+                        <input type="tel" name="tlfn" placeholder="+34 123 456 789"><br><br>
+                        
+                        <label>
+                            <input type="checkbox" name="interests" value="info">Más información del blog
+                        </label><br>
+                        
+                        <label>
+                            <input type="checkbox" name="interests" value="blog">Recibir actualizaciones
+                        </label><br>
+                        
+                        <label>
+                            <input type="checkbox" name="interests" value="offers">Hacer sugerencias
+                        </label><br><br>
+
+                        <label for="comentarios">Escribe tus comentarios y/o sugerencias <br>
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escribe aquí tus comentarios..."></textarea>
+                        </label><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </td>            
+        </tr>      
+        
+
+        <tr style="background-color: #444; color: white;">
+            <td colspan="2" style="padding-left: 10px;">
+                <footer>
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">eStructuralismo</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+                </footer>
+            </td>
+            <td class="ODS">
+                <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="imagenes/4.png" alt="ods 4" height="50"></a>
+                <a href="https://www.un.org/sustainabledevelopment/es/inequality/" target="_blank"><img src="imagenes/10.png" alt="ods 10" height="50"></a>
+                <a href="https://www.un.org/sustainabledevelopment/es/peace-justice/" target="_blank"><img src="imagenes/16.jpg" alt="ods 16" height="50"></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
