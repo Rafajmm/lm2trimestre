@@ -3,136 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Rafael">
     <title>Recomendaciones</title>
     <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-    <style>
-        body{
-            margin: 0; 
-            padding: 0; 
-            background-color: #ffffff; 
-            color: #000000;
-            font-family: Arial, sans-serif;
-             
-        }
-        table{
-            height: 100vh;
-            border-collapse: collapse;
-        }
-        .imagen{
-            border-radius: 8px; 
-            width: 180px; 
-            height: auto;
-        }
-        .ODS{
-            display: flex;
-            justify-content: flex-end;  
-            padding: 10px 20px;  
-        }
-    </style>
+    <link rel="stylesheet" href="eProductos.css">
 </head>
+
 <body>
     <header style="background-color: #444; color: white; padding: 20px 0; text-align: center;">
         <h1>Lecturas recomendadas</h1>
     </header>
-    <table>
+    <nav>
+        <ul>
+            <li class="menu"><a href="index.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Inicio</a></li>
+            <li class="menu"><a href="productos.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Recomendaciones</a></li>
+            <li class="menu"><a href="contacto.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Contacto</a></li>
+        </ul>
+    </nav>
+    
+   
         
-        <tr>
-            <td rowspan="2" style="width: 15%; padding: 20px; vertical-align: top; align-content: center;">
-                <nav>
-                    <ul style="list-style-type: none; padding: 0; margin: 0;">
-                        <li class="menu"><a href="index.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Inicio</a></li>
-                        <li class="menu"><a href="productos.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Recomendaciones</a></li>
-                        <li class="menu"><a href="contacto.html" style="display: block; padding: 8px; background-color: #ddd; text-decoration: none; color: black;">Contacto</a></li>
-                    </ul>
-                </nav>
-            </td>
-            <td>
-                <table style="font-size: small;">
-                    <tr>
+        
+                <div id="libros" style="font-size: small;">
+                    
                         
-                        <td><a href="https://enriquedussel.com/txt/Textos_200_Obras/Aime_zapatistas/Fenomenologia_espiritu-Hegel.pdf" target="_blank"><img src="imagenes/hegel.jpg" alt="fenHegel" class="imagen"></a></td>
-                        <td>
-                            <h4>Fenomenología del espíritu (1807), G.W.F. Hegel</h4>
-                            <p>Hegel explora cómo la conciencia humana y el pensamiento evolucionan dialécticamente. Su enfoque sobre las oposiciones y la evolución del pensamiento influyó en teorías estructuralistas posteriores sobre la mente y las estructuras del conocimiento.</p>
-                        </td>
-                        <td><a href="https://lenguajeyconocimiento.wordpress.com/wp-content/uploads/2014/04/wittgenstein-gredos-tractatus-investigaciones-y-sobre-certeza.pdf" target="_blank" ><img src="imagenes/tractatus.jpg" alt="Wittgenstein" class="imagen"></a></td>
-                        <td>
-                            <h4>Tractatus Logico-Philosophicus (1921), Friedrich Wittgenstein</h4>
-                            <p>Wittgenstein establece que el lenguaje representa la realidad mediante proposiciones. En esta obra, la filosofía debe aclarar el lenguaje para resolver problemas filosóficos, influyendo en la relación entre lenguaje y estructura en el pensamiento estructuralista.</p>
-                        </td>
-                        <td><a href="https://www.textosenlinea.com.ar/academicos/Curso%20de%20Linguistica%20General.pdf" target="_blank"><img src="imagenes/Saussure.jpg" alt="Saussure" class="imagen"></a></td>
-                        <td>
-                            <h4>Curso de lingüística general (1916), Ferdinand de Saussure</h4>
-                            <p>Saussure introduce el concepto del signo lingüístico, diferenciando entre "lengua" y "habla", y establece que el significado depende de las relaciones dentro del sistema lingüístico.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://ses.unam.mx/docencia/2018I/Levi-Strauss1997_ElPensamientoSalvaje.pdf" target="_blank"><img src="imagenes/pensamiento.jpg" alt="L-S" class="imagen"></a></td>
-                        <td>
-                            <h4>El pensamiento salvaje (1962), Claude Lévi-Strauss</h4>
-                            <p>Lévi-Strauss aplica el estructuralismo al estudio de los mitos y las culturas, argumentando que las estructuras mentales subyacen a todas las sociedades humanas.</p>
-                        </td>
-                        <td><a href="imagenes/La Escritura y La Diferencia (Jacques Derrida) (Z-Library).pdf" target="_blank"><img src="imagenes/JDerrida.jpg" alt="Derrida" class="imagen"></a></td>
-                        <td>
-                            <h4>La escritura y la diferencia (1967), Jacques Derrida</h4>
-                            <p>Derrida examina cómo el lenguaje y la escritura estructuran el pensamiento, desafiando las concepciones tradicionales del significado y la representación.</p>
-                        </td>
-                        <td><a href="https://cursosupla.wordpress.com/wp-content/uploads/2016/04/kuhn-t-la-estructura-de-las-revoluciones-cientc3adficas-1962.pdf" target="_blank"><img src="imagenes/Kuhn.jpeg" alt="kuhn" class="imagen"></a></td>
-                        <td>
-                            <h4>La estructura de las revoluciones científicas (1962), Thomas Kuhn</h4>
-                            <p>Kuhn introduce el concepto de "paradigma" en la ciencia, sugiriendo que el conocimiento se organiza y cambia a través de estructuras que no son lineales, influyendo en el pensamiento estructuralista.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://ia801200.us.archive.org/22/items/jakobson-roman-ensayos-de-linguistica-general/Jakobson%20Roman-Ensayos-de-Linguistica-General_text.pdf" target="_blank"><img src="imagenes/jakobson.jpg" alt="jakobson" class="imagen"></a></td>
-                        <td>
-                            <h4>Ensayos de lingüística general (1963), Roman Jakobson</h4>
-                            <p>Jakobson define los principios del análisis estructural del lenguaje, destacando funciones del lenguaje y la organización de los sonidos dentro de los sistemas lingüísticos.</p>
-                        </td>
-                        <td><a href="https://www.mariategui.org/wp-content/uploads/2021/05/06-Lacan-J.-1975-1966-Escritos-1.pdf" target="_blank"><img src="imagenes/lacan.jpg" alt="Lacan" class="imagen"></a></td>
-                        <td>
-                            <h4>Escritos (1966), Jacques Lacan</h4>
-                            <p>Lacan une el psicoanálisis con el estructuralismo, redefiniendo conceptos freudianos bajo la idea de que el inconsciente está estructurado como un lenguaje.</p>
-                        </td>
-                        <td><a href="https://monoskop.org/images/2/24/Barthes_Roland_Elementos_de_semiolog%C3%ADa_1971.pdf" target="_blank"><img src="imagenes/barthes.jpeg" alt="barthes" class="imagen"></a></td>
-                        <td>
-                            <h4>Elementos de semiología (1964), Roland Barthes</h4>
-                            <p>Barthes introduce la semiología como la ciencia que estudia los sistemas de signos dentro de la sociedad, aplicando conceptos estructurales para analizar textos, imágenes y otros fenómenos culturales.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://monoskop.org/images/1/18/Baudrillard_Jean_El_sistema_de_los_objetos_1969.pdf" target="_blank"><img src="imagenes/baudrillard.JPG" alt="baudrillard" class="imagen"></a></td>
-                        <td>
-                            <h4>El sistema de los objetos (1968), Jean Baudrillard</h4>
-                            <p>Baudrillard analiza cómo los objetos no solo sirven como herramientas, sino también como signos en un sistema cultural que organiza el consumo y los significados sociales.</p>
-                        </td>
-                        <td><a href="https://uchile.cl/dam/jcr:c6e7e0d4-3ff7-4c34-9a29-fd9d88208d0c/foucault-michel-las-palabras-y-las-cosas.pdf" target="_blank"><img src="imagenes/foucault.jpeg" alt="foucault" class="imagen"></a></td>
-                        <td>
-                            <h4>Las palabras y las cosas (1966), Michel Foucault</h4>
-                            <p>Foucault analiza cómo las estructuras del conocimiento humano han cambiado históricamente, planteando una arqueología del saber que muestra las discontinuidades en las formas de entender el mundo.</p>
-                        </td>
-                        <td><a href="http://espai-marx.net/elsarbres/wp-content/uploads/2020/01/Althusser_L_Guia_para_leer_El_Capital.pdf" target="_blank"><img src="imagenes/Sin título.jpeg" alt="Althusser" class="imagen"></a></td>
-                        <td>
-                            <h4>Para leer El Capital (1965), Louis Althusser</h4>
-                            <p>Althusser adopta un enfoque estructuralista para analizar cómo las estructuras económicas y sociales determinan las relaciones humanas y los procesos históricos.</p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr></tr>
-        <tr style="background-color: #444; color: white;">
-            <td colspan="2" style="padding-left: 10px;">
-                <footer>
+                        <div class="libro">
+                            <a href="https://enriquedussel.com/txt/Textos_200_Obras/Aime_zapatistas/Fenomenologia_espiritu-Hegel.pdf" target="_blank"><img src="imagenes/hegel.jpg" alt="fenHegel" class="imagen"></a>                        
+                            <div>
+                                <h4>Fenomenología del espíritu (1807), G.W.F. Hegel</h4>
+                                <p>Hegel explora cómo la conciencia humana y el pensamiento evolucionan dialécticamente. Su enfoque sobre las oposiciones y la evolución del pensamiento influyó en teorías estructuralistas posteriores sobre la mente y las estructuras del conocimiento.</p>
+                            </div>
+                        </div>
+
+                        <div class="libro">
+                            <a href="https://lenguajeyconocimiento.wordpress.com/wp-content/uploads/2014/04/wittgenstein-gredos-tractatus-investigaciones-y-sobre-certeza.pdf" target="_blank" ><img src="imagenes/tractatus.jpg" alt="Wittgenstein" class="imagen"></a>                        
+                            <div>
+                                <h4>Tractatus Logico-Philosophicus (1921), Friedrich Wittgenstein</h4>
+                                <p>Wittgenstein establece que el lenguaje representa la realidad mediante proposiciones. En esta obra, la filosofía debe aclarar el lenguaje para resolver problemas filosóficos, influyendo en la relación entre lenguaje y estructura en el pensamiento estructuralista.</p>
+                            </div>
+                        </div>
+
+                        <div class="libro">
+                            <a href="https://www.textosenlinea.com.ar/academicos/Curso%20de%20Linguistica%20General.pdf" target="_blank"><img src="imagenes/Saussure.jpg" alt="Saussure" class="imagen"></a>                        
+                            <div>
+                                <h4>Curso de lingüística general (1916), Ferdinand de Saussure</h4>
+                                <p>Saussure introduce el concepto del signo lingüístico, diferenciando entre "lengua" y "habla", y establece que el significado depende de las relaciones dentro del sistema lingüístico.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="libro">
+                            <a href="https://ses.unam.mx/docencia/2018I/Levi-Strauss1997_ElPensamientoSalvaje.pdf" target="_blank"><img src="imagenes/pensamiento.jpg" alt="L-S" class="imagen"></a>
+                            <div>
+                                <h4>El pensamiento salvaje (1962), Claude Lévi-Strauss</h4>
+                                <p>Lévi-Strauss aplica el estructuralismo al estudio de los mitos y las culturas, argumentando que las estructuras mentales subyacen a todas las sociedades humanas.</p>    
+                            </div>                            
+                        </div>
+
+                        <div class="libro">
+                            <a href="imagenes/La Escritura y La Diferencia (Jacques Derrida) (Z-Library).pdf" target="_blank"><img src="imagenes/JDerrida.jpg" alt="Derrida" class="imagen"></a>
+                            <div>
+                                <h4>La escritura y la diferencia (1967), Jacques Derrida</h4>
+                                <p>Derrida examina cómo el lenguaje y la escritura estructuran el pensamiento, desafiando las concepciones tradicionales del significado y la representación.</p>
+                            </div>                            
+                        </div>
+
+                        <div class="libro">
+                            <a href="https://cursosupla.wordpress.com/wp-content/uploads/2016/04/kuhn-t-la-estructura-de-las-revoluciones-cientc3adficas-1962.pdf" target="_blank"><img src="imagenes/Kuhn.jpeg" alt="kuhn" class="imagen"></a>
+                            <div>
+                                <h4>La estructura de las revoluciones científicas (1962), Thomas Kuhn</h4>
+                                <p>Kuhn introduce el concepto de "paradigma" en la ciencia, sugiriendo que el conocimiento se organiza y cambia a través de estructuras que no son lineales, influyendo en el pensamiento estructuralista.</p>
+                            </div>                            
+                        </div>            
+                    
+                        <div class="libro">
+                            <a href="https://ia801200.us.archive.org/22/items/jakobson-roman-ensayos-de-linguistica-general/Jakobson%20Roman-Ensayos-de-Linguistica-General_text.pdf" target="_blank"><img src="imagenes/jakobson.jpg" alt="jakobson" class="imagen"></a>
+                            <div>
+                                <h4>Ensayos de lingüística general (1963), Roman Jakobson</h4>
+                                <p>Jakobson define los principios del análisis estructural del lenguaje, destacando funciones del lenguaje y la organización de los sonidos dentro de los sistemas lingüísticos.</p>
+                            </div>                            
+                        </div>
+
+                        <div class="libro">
+                            <a href="https://www.mariategui.org/wp-content/uploads/2021/05/06-Lacan-J.-1975-1966-Escritos-1.pdf" target="_blank"><img src="imagenes/lacan.jpg" alt="Lacan" class="imagen"></a>
+                            <div>
+                                <h4>Escritos (1966), Jacques Lacan</h4>
+                                <p>Lacan une el psicoanálisis con el estructuralismo, redefiniendo conceptos freudianos bajo la idea de que el inconsciente está estructurado como un lenguaje.</p>
+                            </div>
+                        </div>
+
+                        <div class="libro">
+                            <a href="https://monoskop.org/images/2/24/Barthes_Roland_Elementos_de_semiolog%C3%ADa_1971.pdf" target="_blank"><img src="imagenes/barthes.jpeg" alt="barthes" class="imagen"></a>
+                            <div>
+                                <h4>Elementos de semiología (1964), Roland Barthes</h4>
+                                <p>Barthes introduce la semiología como la ciencia que estudia los sistemas de signos dentro de la sociedad, aplicando conceptos estructurales para analizar textos, imágenes y otros fenómenos culturales.</p>
+                            </div>
+                        </div>
+
+                        <div class="libro">
+                            <a href="https://monoskop.org/images/1/18/Baudrillard_Jean_El_sistema_de_los_objetos_1969.pdf" target="_blank"><img src="imagenes/baudrillard.JPG" alt="baudrillard" class="imagen"></a>
+                            <div>
+                                <h4>El sistema de los objetos (1968), Jean Baudrillard</h4>
+                                <p>Baudrillard analiza cómo los objetos no solo sirven como herramientas, sino también como signos en un sistema cultural que organiza el consumo y los significados sociales.</p>
+                            </div>
+                        </div>
+
+                        <div class="libro">
+                            <a href="https://uchile.cl/dam/jcr:c6e7e0d4-3ff7-4c34-9a29-fd9d88208d0c/foucault-michel-las-palabras-y-las-cosas.pdf" target="_blank"><img src="imagenes/foucault.jpeg" alt="foucault" class="imagen"></a>
+                            <div>
+                                <h4>Las palabras y las cosas (1966), Michel Foucault</h4>
+                                <p>Foucault analiza cómo las estructuras del conocimiento humano han cambiado históricamente, planteando una arqueología del saber que muestra las discontinuidades en las formas de entender el mundo.</p>
+                            </div>
+                        </div>
+
+                        <div class="libro">
+                            <a href="http://espai-marx.net/elsarbres/wp-content/uploads/2020/01/Althusser_L_Guia_para_leer_El_Capital.pdf" target="_blank"><img src="imagenes/Sin título.jpeg" alt="Althusser" class="imagen"></a>
+                            <div>
+                                <h4>Para leer El Capital (1965), Louis Althusser</h4>
+                                <p>Althusser adopta un enfoque estructuralista para analizar cómo las estructuras económicas y sociales determinan las relaciones humanas y los procesos históricos.</p>
+                            </div>
+                        </div>
+                </div>
+            
+        
+
+
+        <footer>
+                <div>
                     <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">eStructuralismo</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
-                </footer>
-            </td>
-            <td class="ODS">
-                <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="imagenes/4.png" alt="ods 4" height="50"></a>
-                <a href="https://www.un.org/sustainabledevelopment/es/inequality/" target="_blank"><img src="imagenes/10.png" alt="ods 10" height="50"></a>
-                <a href="https://www.un.org/sustainabledevelopment/es/peace-justice/" target="_blank"><img src="imagenes/16.jpg" alt="ods 16" height="50"></a>
-            </td>
-        </tr>   
-    </table>    
+                </div>
+            
+                <div class="ODS">
+                    <a  href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank"><img src="imagenes/4.png" alt="ods 4" height="50"></a>
+                    <a  href="https://www.un.org/sustainabledevelopment/es/inequality/" target="_blank"><img src="imagenes/10.png" alt="ods 10" height="50"></a>
+                    <a  href="https://www.un.org/sustainabledevelopment/es/peace-justice/" target="_blank"><img src="imagenes/16.jpg" alt="ods 16" height="50"></a>            
+                </div>
+        </footer> 
+      
 </body>
 </html>

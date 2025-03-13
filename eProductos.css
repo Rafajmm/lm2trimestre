@@ -1,0 +1,50 @@
+body{
+    margin: 0; 
+    padding: 0; 
+    background-color: #ffffff; 
+    color: #000000;
+    font-family: Arial, sans-serif;
+     
+}
+.imagen{
+    border-radius: 8px; 
+    width: 180px; 
+    height: auto;
+}
+nav{
+    display: flex;
+    position: fixed;
+    width: 15%; padding: 20px;    
+}
+nav ul{
+    list-style-type: none;  
+    padding: 0;
+    margin: 0;
+}
+#libros{            
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.libro{
+    display: flex;
+    float: inline-start;
+    overflow:auto;
+    width: 33%;            
+} 
+.libro a{
+    margin-right: 7px;
+}
+footer{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 20px;              
+    background-color: #444;
+}        
+
+.ODS{
+    display: flex;
+    justify-content: flex-end;
+} 
