@@ -11,12 +11,6 @@ header{
     background-color: #444; color: white; padding: 20px 0; text-align: center;
 }
 
-.imagen{
-    border-radius: 8px;
-    margin-right: 7px;
-    width: 180px; 
-    height: 300px;
-}
 nav{
     display: flex;
     position: fixed;
@@ -27,21 +21,6 @@ nav ul{
     padding: 0;
     margin: 0;
 }
-#libros{            
-    border-collapse: collapse;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;       
-    margin-left: 180px;
-    margin-top: 20px;
-}
-.libro{
-    display: flex;
-    width: 29%;
-    height: 400px;
-    margin: 20px;
-                
-} 
 
 footer{
     display: flex;
@@ -53,4 +32,13 @@ footer{
 .ODS{
     display: flex;
     justify-content: flex-end;
-} 
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
