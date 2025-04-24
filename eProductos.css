@@ -1,56 +1,114 @@
-body{
-    margin: 0; 
-    padding: 0; 
-    background-color: #ffffff; 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
     color: #000000;
     font-family: Arial, sans-serif;
-     
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 15% 85%;
+    min-height: 100vh;
 }
 
-header{
-    background-color: #444; color: white; padding: 20px 0; text-align: center;
+header {
+    grid-column: 1 / -1;
+    background-color: #444;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.imagen{
-    border-radius: 8px;
-    margin-right: 7px;
-    width: 180px; 
-    height: 300px;
+nav {
+    grid-row: 2;
+    grid-column: 1;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    padding: 20px;
 }
-nav{
+
+#libros {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.libro {
     display: flex;
-    position: fixed;
-    width: 15%; padding: 20px;    
+    flex-direction: column;
+    height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
-nav ul{
-    list-style-type: none;  
+
+.imagen {
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.libro h4, .libro p {
+    margin: 5px 0;
+}
+
+footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+}
+
+.ODS {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
-#libros{            
-    border-collapse: collapse;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;       
-    margin-left: 180px;
-    margin-top: 20px;
+
+.menu a {
+    display: block;
+    padding: 8px;
+    background-color: #ddd;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+    border-radius: 4px;
 }
-.libro{
-    display: flex;
-    width: 29%;
-    height: 400px;
-    margin: 20px;
-                
-} 
 
-footer{
-    display: flex;
-    justify-content:space-between;
-    padding: 10px 20px;              
-    background-color: #444;
-}        
+@media (max-width: 1200px) {
+    #libros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-.ODS{
-    display: flex;
-    justify-content: flex-end;
-} 
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 100%;
+    }
+    
+    nav {
+        position: static;
+        grid-column: 1;
+        width: 100%;
+    }
+    
+    #libros {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+    }
+}
